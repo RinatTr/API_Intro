@@ -119,4 +119,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
+  let firstNames = ["Johnny","Flex","J","BigO","lil","Shady","Wicked","Cousin","Dr.","RED","Papa","Mama"];
+  let lastNames = ["Beatz","Stack","Fruitcake","Suga","Puff","Pup","Static","Wax-king",".pop()"];
+
+  const randomNum = function(arr) {
+    return Math.floor(Math.random()*arr.length);
+  }
+
+  let button2 = document.querySelector(".getRap");
+  button2.addEventListener('click', () => {
+    let answerSpace = document.querySelector(".rapperName");
+    let name = `${firstNames[randomNum(firstNames)]} ${lastNames[randomNum(lastNames)]}`
+    answerSpace.innerText = name;
+    if (button.innerText!=="Another One!") {
+      button.innerText = "Another One!"
+    }
+  })
+
+
 })

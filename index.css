@@ -1,24 +1,28 @@
 body {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   font-family: monospace;
+  justify-content: space-between;
 }
 
-.main {
+.main, .main2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: lightyellow;
   max-width: 400px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-.buttonRow {
+.buttonRow, .buttonRow2 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.getDog {
+.getDog, .getRap {
   width: 30%;
   background: radial-gradient(ellipse at center, #fefcea 0%,#f1da36 100%);
   font-family: cursive;
@@ -26,7 +30,7 @@ body {
   border-radius: 5px;
 }
 
-.breedName {
+.breedName, .rapperName {
   display: flex;
   justify-content: center;
   align-items: center;
