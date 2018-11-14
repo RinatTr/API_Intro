@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: lightyellow;
+  max-width: 400px;
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.getDog {
+  width: 30%;
+  background: radial-gradient(ellipse at center, #fefcea 0%,#f1da36 100%);
+  font-family: cursive;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.breedName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background: blue;
+  color: white;
+  height: 50px;
+  margin-top: 10px;
+}
